@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>cutting</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+ #sec
+{
+width:1350px;
+height:550px;
+margin:5px;
+float:left;
+
+}
+
+#sec div{
+background-image: url(images/andreas-ronningen-8RMP683VW-o-unsplash.jpg);
+
+margin:1px;
+
+width:329px;
+height:550px;
+float:left;
+}
+
+</style>
+<script>
+$(document).ready(function(){
+var pieces="";
+for(var i=0,horizontal=0;i<4;i++,horizontal-=329)
+{
+	pieces += "<div style='background-position:" + horizontal + "px 0px'></div>"
+}
+$("#sec").append(pieces);
+
+});
+</script>
+</head>
+<body>
+
+
+ <div id="sec"></div>
+  
+  
+ </body>
+
+</html> 
