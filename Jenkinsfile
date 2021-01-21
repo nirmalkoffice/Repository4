@@ -4,16 +4,13 @@ pipeline {
     stages {
         stage('Build') {
             steps {
+                sh git pull 
                 echo 'Building..'
-            }
-        }
-        stage('Test') {
-            steps {
-                echo 'Testing..'
             }
         }
         stage('Deploy') {
             steps {
+                sh pwd
                 echo 'Deploying....'
             }
         }
