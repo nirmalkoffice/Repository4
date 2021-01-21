@@ -4,7 +4,7 @@
 
 cd /var/www/html/Repository4
 
-git pull
+sudo git pull
 
 
-systemctl restart apache2.service
+sudo systemctl restart apache2.service
