@@ -11,6 +11,8 @@ pipeline {
             steps {
               
                 sh "pwd"
+                sh "chmod 777 deploy.sh"
+                sh "./deploy.sh"
             }
         }
     }
